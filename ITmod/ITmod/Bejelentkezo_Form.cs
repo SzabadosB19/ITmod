@@ -15,7 +15,8 @@ namespace ITmod
         public Bejelentkezo_Form()
         {
             InitializeComponent();
-            linkLabel1.LinkArea = new LinkArea(26, 14);
+            linkLabel1.LinkArea = new LinkArea(26, 13);
+            tb_jelszo.PasswordChar = '*';
         }
                
                    
@@ -37,7 +38,7 @@ namespace ITmod
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            if (tb_email.Text.Contains("@"))
+            if (tb_email.Text.Contains("@") && tb_email.Text.Contains("."))
             {
                 
             } else

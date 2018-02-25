@@ -41,7 +41,7 @@
             this.btn_Bejelentkezes.Location = new System.Drawing.Point(128, 164);
             this.btn_Bejelentkezes.Name = "btn_Bejelentkezes";
             this.btn_Bejelentkezes.Size = new System.Drawing.Size(83, 23);
-            this.btn_Bejelentkezes.TabIndex = 0;
+            this.btn_Bejelentkezes.TabIndex = 3;
             this.btn_Bejelentkezes.Text = "Bejelentkezés";
             this.btn_Bejelentkezes.UseVisualStyleBackColor = true;
             this.btn_Bejelentkezes.Click += new System.EventHandler(this.btn_Login_Click);
@@ -51,14 +51,14 @@
             this.tb_jelszo.Location = new System.Drawing.Point(119, 123);
             this.tb_jelszo.Name = "tb_jelszo";
             this.tb_jelszo.Size = new System.Drawing.Size(100, 20);
-            this.tb_jelszo.TabIndex = 1;
+            this.tb_jelszo.TabIndex = 2;
             // 
             // tb_email
             // 
             this.tb_email.Location = new System.Drawing.Point(119, 63);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(100, 20);
-            this.tb_email.TabIndex = 2;
+            this.tb_email.TabIndex = 1;
             // 
             // label2
             // 
@@ -84,13 +84,14 @@
             this.linkLabel1.Location = new System.Drawing.Point(52, 227);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(262, 13);
-            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Ha még nem regisztráltál, ide kattintva tudod megtenni";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Bejelentkezo_Form
             // 
+            this.AcceptButton = this.btn_Bejelentkezes;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 295);
@@ -101,7 +102,7 @@
             this.Controls.Add(this.tb_jelszo);
             this.Controls.Add(this.btn_Bejelentkezes);
             this.Name = "Bejelentkezo_Form";
-            this.Text = "Form1";
+            this.Text = "Bejelentkezés";
             this.Load += new System.EventHandler(this.Bejelentkezo_Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
