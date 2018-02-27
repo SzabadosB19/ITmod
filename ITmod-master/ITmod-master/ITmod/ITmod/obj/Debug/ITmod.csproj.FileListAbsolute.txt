@@ -1,0 +1,20 @@
+c:\users\bence\documents\visual studio 2013\Projects\ITmod\ITmod\bin\Debug\ITmod.exe.config
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.csprojResolveAssemblyReference.cache
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.Properties.Resources.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.csproj.GenerateResource.Cache
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.Bejelentkezo_Form.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\bin\Debug\ITmod.exe
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\bin\Debug\ITmod.pdb
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.exe
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.pdb
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\ITmod\ITmod\obj\Debug\ITmod.Regisztracios_Form.resources
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\bin\Debug\ITmod.exe.config
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.exe
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.pdb
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\bin\Debug\ITmod.exe
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\bin\Debug\ITmod.pdb
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.csprojResolveAssemblyReference.cache
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.Bejelentkezo_Form.resources
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.Properties.Resources.resources
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.Regisztracios_Form.resources
+H:\ITmod\ITmod-master\ITmod-master\ITmod\ITmod\obj\Debug\ITmod.csproj.GenerateResource.Cache
