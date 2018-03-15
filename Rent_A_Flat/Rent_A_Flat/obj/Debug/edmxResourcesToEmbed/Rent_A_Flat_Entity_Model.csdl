@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Rent_A_FlatModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Rent_A_FlatEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Felhasznaloes" EntityType="Rent_A_FlatModel.Felhasznalo" />
+    <EntitySet Name="Ingatlans" EntityType="Rent_A_FlatModel.Ingatlan" />
+  </EntityContainer>
+  <EntityType Name="Felhasznalo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Jelszo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefonszam" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Ingatlan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cim" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Terulet" Type="Int32" Nullable="false" />
+    <Property Name="Szoba" Type="Int32" Nullable="false" />
+    <Property Name="Felszoba" Type="Int32" Nullable="false" />
+    <Property Name="Komfort" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Futes" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Furdo" Type="Int32" Nullable="false" />
+    <Property Name="Epites_eve" Type="Int32" Nullable="false" />
+    <Property Name="Parkolas" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Leiras" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Tulajdonos" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

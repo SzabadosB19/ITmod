@@ -1,0 +1,14 @@
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\Rent_A_Flat.exe.config
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\Rent_A_Flat.exe
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\Rent_A_Flat.pdb
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\EntityFramework.dll
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\EntityFramework.xml
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.Bejelentkezes_Form.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.Properties.Resources.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.Regisztracios_Form.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.csproj.GenerateResource.Cache
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.exe
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.pdb
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.csprojResolveAssemblyReference.cache

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Rent_A_FlatModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Felhasznalo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nev" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cim" Type="nvarchar" MaxLength="50" />
+    <Property Name="Jelszo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefonszam" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Ingatlan">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cim" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Terulet" Type="int" Nullable="false" />
+    <Property Name="Szoba" Type="int" Nullable="false" />
+    <Property Name="Felszoba" Type="int" Nullable="false" />
+    <Property Name="Komfort" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Futes" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Furdo" Type="int" Nullable="false" />
+    <Property Name="Epites_eve" Type="int" Nullable="false" />
+    <Property Name="Parkolas" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Leiras" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Tulajdonos" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Rent_A_FlatModelStoreContainer">
+    <EntitySet Name="Felhasznalo" EntityType="Self.Felhasznalo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ingatlan" EntityType="Self.Ingatlan" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

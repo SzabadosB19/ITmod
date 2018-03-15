@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Rent_A_FlatModelStoreContainer" CdmEntityContainer="Rent_A_FlatEntities">
+    <EntitySetMapping Name="Felhasznaloes">
+      <EntityTypeMapping TypeName="Rent_A_FlatModel.Felhasznalo">
+        <MappingFragment StoreEntitySet="Felhasznalo">
+          <ScalarProperty Name="Telefonszam" ColumnName="Telefonszam" />
+          <ScalarProperty Name="Jelszo" ColumnName="Jelszo" />
+          <ScalarProperty Name="Cim" ColumnName="Cim" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Nev" ColumnName="Nev" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ingatlans">
+      <EntityTypeMapping TypeName="Rent_A_FlatModel.Ingatlan">
+        <MappingFragment StoreEntitySet="Ingatlan">
+          <ScalarProperty Name="Tulajdonos" ColumnName="Tulajdonos" />
+          <ScalarProperty Name="Leiras" ColumnName="Leiras" />
+          <ScalarProperty Name="Parkolas" ColumnName="Parkolas" />
+          <ScalarProperty Name="Epites_eve" ColumnName="Epites_eve" />
+          <ScalarProperty Name="Furdo" ColumnName="Furdo" />
+          <ScalarProperty Name="Futes" ColumnName="Futes" />
+          <ScalarProperty Name="Komfort" ColumnName="Komfort" />
+          <ScalarProperty Name="Felszoba" ColumnName="Felszoba" />
+          <ScalarProperty Name="Szoba" ColumnName="Szoba" />
+          <ScalarProperty Name="Terulet" ColumnName="Terulet" />
+          <ScalarProperty Name="Cim" ColumnName="Cim" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

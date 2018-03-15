@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Rent_A_FlatModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Felhasznalo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nev" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cim" Type="nvarchar" MaxLength="50" />
+          <Property Name="Jelszo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telefonszam" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Ingatlan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cim" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Terulet" Type="int" Nullable="false" />
+          <Property Name="Szoba" Type="int" Nullable="false" />
+          <Property Name="Felszoba" Type="int" Nullable="false" />
+          <Property Name="Komfort" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Futes" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Furdo" Type="int" Nullable="false" />
+          <Property Name="Epites_eve" Type="int" Nullable="false" />
+          <Property Name="Parkolas" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Leiras" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Tulajdonos" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Rent_A_FlatModelStoreContainer">
+          <EntitySet Name="Felhasznalo" EntityType="Self.Felhasznalo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ingatlan" EntityType="Self.Ingatlan" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Rent_A_FlatModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Rent_A_FlatEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Felhasznaloes" EntityType="Rent_A_FlatModel.Felhasznalo" />
+          <EntitySet Name="Ingatlans" EntityType="Rent_A_FlatModel.Ingatlan" />
+        </EntityContainer>
+        <EntityType Name="Felhasznalo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nev" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Jelszo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Telefonszam" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Ingatlan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cim" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Terulet" Type="Int32" Nullable="false" />
+          <Property Name="Szoba" Type="Int32" Nullable="false" />
+          <Property Name="Felszoba" Type="Int32" Nullable="false" />
+          <Property Name="Komfort" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Futes" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Furdo" Type="Int32" Nullable="false" />
+          <Property Name="Epites_eve" Type="Int32" Nullable="false" />
+          <Property Name="Parkolas" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Leiras" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tulajdonos" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Rent_A_FlatModelStoreContainer" CdmEntityContainer="Rent_A_FlatEntities">
+          <EntitySetMapping Name="Felhasznaloes">
+            <EntityTypeMapping TypeName="Rent_A_FlatModel.Felhasznalo">
+              <MappingFragment StoreEntitySet="Felhasznalo">
+                <ScalarProperty Name="Telefonszam" ColumnName="Telefonszam" />
+                <ScalarProperty Name="Jelszo" ColumnName="Jelszo" />
+                <ScalarProperty Name="Cim" ColumnName="Cim" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Nev" ColumnName="Nev" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ingatlans">
+            <EntityTypeMapping TypeName="Rent_A_FlatModel.Ingatlan">
+              <MappingFragment StoreEntitySet="Ingatlan">
+                <ScalarProperty Name="Tulajdonos" ColumnName="Tulajdonos" />
+                <ScalarProperty Name="Leiras" ColumnName="Leiras" />
+                <ScalarProperty Name="Parkolas" ColumnName="Parkolas" />
+                <ScalarProperty Name="Epites_eve" ColumnName="Epites_eve" />
+                <ScalarProperty Name="Furdo" ColumnName="Furdo" />
+                <ScalarProperty Name="Futes" ColumnName="Futes" />
+                <ScalarProperty Name="Komfort" ColumnName="Komfort" />
+                <ScalarProperty Name="Felszoba" ColumnName="Felszoba" />
+                <ScalarProperty Name="Szoba" ColumnName="Szoba" />
+                <ScalarProperty Name="Terulet" ColumnName="Terulet" />
+                <ScalarProperty Name="Cim" ColumnName="Cim" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
