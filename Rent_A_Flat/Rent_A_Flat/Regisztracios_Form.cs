@@ -37,8 +37,9 @@ namespace Rent_A_Flat
         {
             String hibauzenet = "";
             Match email_regex = Regex.Match(tb_email.Text, @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-            Match jelszo_regex = Regex.Match(tb_jelszo.Text, @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$");
+            Match jelszo_regex = Regex.Match(tb_jelszo.Text, @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,15}$");
             Match nev_regex = Regex.Match(tb_nev.Text, @"/([\p{L}'-]+) ([\p{L}'-]+)/$");
+            Match cim_regex = Regex.Match(tb_cim.Text, @"\d{4}\,\s\w+\,\s[\w\s]+$");
             
             if (!email_regex.Success)
             {
@@ -64,7 +65,19 @@ namespace Rent_A_Flat
                 hibauzenet += "Nem megfelelő felhasználónév.";
                 label1.ForeColor = Color.Red;
             }
-            
+
+            if (!tb_telefon_1.Text.Contains("+") || tb_telefon_1.Text.Length!=3 || cb_telefon.Text.Length!=2 || tb_telefon_3.Text.Length!=7)
+            {
+                hibauzenet += "Nem megfelelő a telefonszám.";
+                label6.ForeColor=Color.Red;
+            }
+
+            if (!cim_regex.Success)
+            {
+                hibauzenet += "Rosszul megadott cím.";
+
+            }
+
             {
                 if (email_regex.Success && jelszo_regex.Success && tb_jelszo.Text==tb_jelszo_ujra.Text && tb_cim.Text!="" &&
                     tb_nev.Text!="")
@@ -92,8 +105,7 @@ namespace Rent_A_Flat
                     }  
                 } else
                 {
-                    MessageBox.Show(hibauzenet);
-                    
+                    MessageBox.Show(hibauzenet, "Hiba!");
                 }
 
 

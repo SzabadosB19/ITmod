@@ -64,6 +64,12 @@
     <Compile Include="Bejelentkezes_Form.Designer.cs">
       <DependentUpon>Bejelentkezes_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Feltoltes_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feltoltes_Form.Designer.cs">
+      <DependentUpon>Feltoltes_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ingatlan.cs">
       <DependentUpon>Rent_A_Flat_Entity_Model.tt</DependentUpon>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil_Form.Designer.cs">
+      <DependentUpon>Profil_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +111,15 @@
     <EmbeddedResource Include="Bejelentkezes_Form.resx">
       <DependentUpon>Bejelentkezes_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Feltoltes_Form.resx">
+      <DependentUpon>Feltoltes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil_Form.resx">
+      <DependentUpon>Profil_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -107,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Regisztracios_Form.resx">
       <DependentUpon>Regisztracios_Form.cs</DependentUpon>
@@ -144,6 +166,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_icon_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_icon_good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

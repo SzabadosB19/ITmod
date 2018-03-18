@@ -10,12 +10,15 @@ using System.Windows.Forms;
 
 namespace Rent_A_Flat
 {
+     
+
     public partial class Bejelentkezes_Form : Form
     {
         public Bejelentkezes_Form()
         {
             InitializeComponent();
             linkLabel1.LinkArea = new LinkArea(26, 13);
+            
             
         }
 
@@ -44,22 +47,34 @@ namespace Rent_A_Flat
         {
             try
             {
-                foreach (var felhasznalo in raf.Felhasznaloes)
-                {
-                    if (felhasznalo.Email == tb_email.Text && felhasznalo.Jelszo == tb_jelszo.Text)
-                    {
-                        Main_Form main_form = new Main_Form();
-                        if (main_form.ShowDialog() == DialogResult.OK)
-                        {
+                var a= raf.Felhasznaloes.FirstOrDefault(x => x.Email == tb_email.Text);
+               
+                //nev= a.Nev;
+                
 
-                        }
-                    }
+                if (a.Email==tb_email.Text && a.Jelszo==tb_jelszo.Text)
+                {
+                    //this.Hide();
+                    var main_form = new Main_Form();
+                    main_form.BejelentkezettFelhasznalo = (a as Felhasznalo);
+                    main_form.Closed += (s, args) => this.Close();
+                    
+                    main_form.Show();
                 }
+                //Main_Form main_form = new Main_Form();
+                
+                
             } catch (Exception ec)
             {
                 Console.WriteLine(ec);
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tb_email.Text = "asd@asd.com";
+            tb_jelszo.Text = "Asd123!.";
         }
 
 

@@ -35,6 +35,7 @@
             this.btn_Bejelentkezes = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,13 +70,14 @@
             // 
             this.tb_jelszo.Location = new System.Drawing.Point(113, 116);
             this.tb_jelszo.Name = "tb_jelszo";
+            this.tb_jelszo.PasswordChar = '*';
             this.tb_jelszo.Size = new System.Drawing.Size(210, 20);
             this.tb_jelszo.TabIndex = 1;
             // 
             // btn_Bejelentkezes
             // 
             this.btn_Bejelentkezes.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_Bejelentkezes.Location = new System.Drawing.Point(113, 159);
+            this.btn_Bejelentkezes.Location = new System.Drawing.Point(137, 157);
             this.btn_Bejelentkezes.Name = "btn_Bejelentkezes";
             this.btn_Bejelentkezes.Size = new System.Drawing.Size(126, 34);
             this.btn_Bejelentkezes.TabIndex = 2;
@@ -107,11 +109,22 @@
             this.linkLabel2.Text = "Regisztráció nélküli böngészés";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(283, 290);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Bejelentkezes_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(388, 325);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btn_Bejelentkezes);
@@ -136,6 +149,7 @@
         private System.Windows.Forms.Button btn_Bejelentkezes;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -27,7 +27,7 @@
     <Property Name="Komfort" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Futes" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Furdo" Type="Int32" Nullable="false" />
-    <Property Name="Epites_eve" Type="Int32" Nullable="false" />
+    <Property Name="Epites_eve" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="Parkolas" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Leiras" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Tulajdonos" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />

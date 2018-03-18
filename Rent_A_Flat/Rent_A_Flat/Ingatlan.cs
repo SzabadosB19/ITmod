@@ -11,7 +11,7 @@ namespace Rent_A_Flat
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Ingatlan
     {
         public int Id { get; set; }
@@ -22,28 +22,27 @@ namespace Rent_A_Flat
         public string Komfort { get; set; }
         public string Futes { get; set; }
         public int Furdo { get; set; }
-        public int Epites_eve { get; set; }
+        public System.DateTime Epites_eve { get; set; }
         public string Parkolas { get; set; }
         public string Leiras { get; set; }
-        public string Tulajdonos { get; set; }
+       // public string Tulajdonos { get; set; }
 
-        public Ingatlan (string cim, int terulet, int szoba, int felszoba, string komfort,
-            string futes, int furdo, int epites_eve, string parkolas, string leiras, string tulajdonos)
+        public Ingatlan(string Cim, int Terulet, int Szoba, int Felszoba, string Komfort, string Futes, int Furdo, System.DateTime Epites_eve, string Parkolas, string Leiras)
+            //string Tulajdonos)
         {
-            this.Cim = cim;
-            this.Terulet = terulet;
-            this.Szoba = szoba;
-            this.Felszoba = felszoba;
-            this.Komfort = komfort;
-            this.Futes = futes;
-            this.Furdo = furdo;
-            this.Epites_eve = epites_eve;
-            this.Parkolas = parkolas;
-            this.Leiras = leiras;
-            this.Tulajdonos = tulajdonos;
+            
+            this.Cim = Cim;
+            this.Terulet = Terulet;
+            this.Szoba = Szoba;
+            this.Felszoba = Felszoba;
+            this.Komfort = Komfort;
+            this.Futes = Futes;
+            this.Furdo = Furdo;
+            this.Epites_eve = Epites_eve;
+            this.Parkolas = Parkolas;
+            this.Leiras = Leiras;
+            //this.Tulajdonos = Tulajdonos;
 
         }
-        
-        }
-
+    }
 }

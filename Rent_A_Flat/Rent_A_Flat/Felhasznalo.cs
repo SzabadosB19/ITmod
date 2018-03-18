@@ -30,9 +30,16 @@ namespace Rent_A_Flat
             this.Telefonszam = telefonszam;
         }
 
+        public Felhasznalo()
+        {
+
+        }
+
+
         public override string ToString()
         {
             return this.Nev;
         }
+
     }
 }

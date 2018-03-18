@@ -11,4 +11,6 @@ c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj
 c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.csproj.GenerateResource.Cache
 c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.exe
 c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.pdb
-c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.csprojResolveAssemblyReference.cache
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.Main_Form.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.Feltoltes_Form.resources
+c:\Users\Bence\Documents\Visual Studio 2013\Projects\Rent_A_Flat\Rent_A_Flat\obj\Debug\Rent_A_Flat.Profil_Form.resources

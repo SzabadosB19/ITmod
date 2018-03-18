@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="da1495cd13e84aa5a6eb1233591bed63" Name="Diagram1">
         <EntityTypeShape EntityType="Rent_A_FlatModel.Felhasznalo" Width="1.5" PointX="0.75" PointY="0.625" />
-        <EntityTypeShape EntityType="Rent_A_FlatModel.Ingatlan" Width="1.5" PointX="2.75" PointY="0.625" />
+        <EntityTypeShape EntityType="Rent_A_FlatModel.Ingatlan" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
